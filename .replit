@@ -1,0 +1,194 @@
+/*
+* dataTypes:
+*
+* 0. Data types basically specify what kind of data can be stored and manipulated within a program. ... String, Number, and Boolean are primitive data types. 
+*Object, Array, and Function (which are all types of objects) are composite data types.
+
+// 1. number//
+an integer or a floating-point number	
+example: number(1,2,3,4)
+var length = 16;
+
+// 2. string//
+represents textual data
+example: var lastName = "Johnson"; 
+hello' , "hello world!" 
+
+// 3. boolean//
+Any of two values: true or false
+ example: var x = 5;
+var y = 5;
+var z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+true and false
+
+// 4. Array// 
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+examples: var foods = [" pasta", "chicken", "fries"];
+
+
+// 5. function// 
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+example: var x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+// 6.undefind//
+a data type whose variable is not initialized
+example: let a;
+
+// 7.NaN//
+it is a variable in global scope.
+NaN === NaN;        // false
+Number.NaN === NaN; // false
+isNaN(NaN);         // true
+isNaN(Number.NaN);  // true
+Number.isNaN(NaN);  // true
+
+
+
+// 8.infinity and -infinity//
+infinity and -infinity
+console.log(Infinity          ); /* Infinity */
+console.log(Infinity + 1      ); /* Infinity */
+console.log(Math.pow(10, 1000)); /* Infinity */
+console.log(Math.log(0)       ); /* -Infinity */
+console.log(1 / Infinity      ); /* 0 */
+console.log(1 / 0             ); /* Infinity */
+
+answer to question: the difference is primitive are already defined and non primitives are created by the programmer and are not defined by JavaScript. 
+
+
+opreators:
+
+0. An operator performs some operation on single or multiple operands (data value) and produces a result.
+
+// 1.Assignment operators//
+JavaScript includes assignment operators to assign values to variables with less key strokes.
+var x = 5
+x = y; //x would be 10
+
+// 2.Arithmetic operators//
+Arithmetic operators are used to perform mathematical operations between numeric operands.
+var x = 5, y = 10, z = 15;
+
+x + y; //returns 15
+
+y - x; //returns 5
+
+x * y; //returns 50
+
+y / x; //returns 2
+
+x % 2; //returns 1
+
+x++; //returns 6
+
+x--; //returns 4
+
+// 3.Comparison operators//
+JavaScript language includes operators that compare two operands and return Boolean value true or false.
+var a = 5, b = 10, c = "5";
+var x = a;
+
+a == c; // returns true
+
+a === c; // returns false
+
+a == x; // returns true
+
+a != b; // returns true
+
+a > b; // returns false
+
+a < b; // returns true
+
+a >= b; // returns false
+
+a <= b; // returns true
+
+a >= c; // returns true
+
+a <= c; // returns true
+
+// 4.Logical operators//
+Logical operators are used to combine two or more conditions. JavaScript includes following logical operators.
+var a = 5, b = 10;
+
+(a != b) && (a < b); // returns true
+
+(a > b) || (a == b); // returns false
+
+(a < b) || (a == b); // returns true
+
+!(a < b); // returns false
+
+!(a > b); // returns true
+
+
+String manipulation:
+
+0. Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+
+// 1.With operators (+)//
+var x = 5;         // assign the value 5 to x
+var y = 2;         // assign the value 2 to y
+var z = x + y;     // assign the value 7 to z (5 + 2)
+
+//2. With string methods (split, join,  reverse)//
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
+
+Control flow
+
+0. Control flow is in computer science the order that the instructions or statements or functions are executed. 
+
+// 1.if//
+Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+if (hour < 18) {
+  greeting = "Good day";
+}
+
+// 2. Else-if//
+Use the else if statement to specify a new condition if the first condition is false.
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+
+// 3.Else//
+Use the else statement to specify a block of code to be executed if the condition is false.
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
